@@ -11,3 +11,8 @@ class Post(models.Model):
     category = models.CharField(max_length=50)
     body = models.TextField()
     created = models.DateTimeField(auto_now_add=True)
+
+
+class Category(models.Model):
+    title = models.CharField(max_length=50)
+    status = models.BooleanField(default=False)
